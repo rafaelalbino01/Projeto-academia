@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62,5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background:  url('img/img5.jpg');
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    position: relative;
+    
+}
+
+body::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+header{
+    width: 100%;
+    height: 7vh;
+    background: rgba( 22,22,22,0.2);
+}
+
+.menu-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+ .list-itens{
+    display: flex;
+    list-style: none;
+    
+}
+
+.menu-content  .list-itens a:hover{
+    border-bottom: solid 1px white;
+    
+}
+
+.menu-content  .list-itens a{
+
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    transform: 2ms ease-in ;
+    position: relative;
+}
+
+.menu-content .list-itens a:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(251,255,0);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover{
+    width: 100%;
+    
+}
+
+main{
+    height: 93vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  
+}
+
+
+.primary-text{
+    width: 550px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    
+}
+
+.second-text{
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.btn button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid wheat;
+    color: wheat;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 2s;
+}
+
+.btn button:before{
+    
+    content:"" ;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 60px;
+    position: absolute;
+   
+   
+    background-color: rgb(61,61,61);
+    z-index: -1;
+    transition: 1s all;
+    border-radius: 20px;
+
+}
+
+.btn button:hover{
+width: 100%;
+background-color: rgb(61,61,61);
+transition: 1s all;
+}
+
